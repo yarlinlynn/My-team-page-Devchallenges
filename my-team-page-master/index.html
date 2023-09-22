@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"/>
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <title>My team page | Devchallenges</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      main {
+        margin: 0 12px;
+      }
+
+      .header-text {
+        margin: 40px 0;
+      }
+
+      .left-text-lg {
+        margin-top: 20px;
+      }
+
+      .header-side-text {
+        margin-top: 8px;
+        font-size: 14px;
+        width: 333px;
+        line-height: 21px;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 156px);
+        margin: 0 12px;
+        gap: 25px;
+      }
+
+      .image-card {
+        width: 156px;
+        height: 237px;
+        margin-top: 0;
+      }
+
+      .image-text {
+        display: flex;
+        flex-direction: column-reverse;
+        writing-mode: vertical-rl;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 138.72px;
+      }
+
+      .side-flex-text {
+        font-family: 'PT Serif';
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .name {
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .image-card:nth-child(even) {
+        margin-top: 60px;
+      }
+
+      @media (min-width: 768px) {
+        .header-text {
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .left-text-lg {
+          margin-top: 0;
+        }
+
+        .image-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 156px);
+          margin: 0 10%;
+          gap: 70px;
+        }
+
+        .image-card:nth-child(even) {
+          margin-top: 0;
+        }
+
+        .image-card:nth-child(3n + 2) {
+          margin-top: 60px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .image-grid {
+          margin: 0 20%;
+          justify-content: space-between;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .header-text {
+          margin-bottom: 100px;
+        }
+
+        .header-side-text {
+          width: 439px;
+        }
+
+        .image-grid {
+          margin: 0 20%;
+          grid-template-columns: repeat(3, 264px);
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <main>
+
+      <section class="header-text">
+        <h2>The creative crew</h2>
+
+        <div class="left-text-lg">
+          <h4>Who we are</h4>
+          <p class="header-side-text">
+            We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.
+          </p>
+        </div>
+        
+      </section>
+
+      <section class="image-grid">
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo1.png">
+            <p class="side-flex-text">Product owner</p>
+          </div>
+          <p class="name">Bill Mahoney</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo2.png">
+            <p class="side-flex-text">Art director</p>
+          </div>
+          <p class="name">Saba Cabrera</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo3.png">
+            <p class="side-flex-text">Tech Lead</p>
+          </div>
+          <p class="name">Shae Le</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo4.png">
+            <p class="side-flex-text">UX Designer</p>
+          </div>
+          <p class="name">Skylah Lu</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo5.png">
+            <p class="side-flex-text">Developer</p>
+          </div>
+          <p class="name">Griff Richards</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-text">
+            <img src="images/photo6.png">
+            <p class="side-flex-text">DEverloper</p>
+          </div>
+          <p class="name">Stan John</p>
+        </div>
+
+      </section>
+
+    </main>
+  </body>
+</html>
